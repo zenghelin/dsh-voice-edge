@@ -1,3 +1,11 @@
+## 0.0.2 — 2026-10-27
+
+**文档和推送上路的小工具**
+
+- 🆕 `tools/推送.mjs`：有些网络连不上 `github.com:443`，`git push` 会直接超时。
+  这个脚本用 GitHub 的接口把工作区当成快照提交上去，不需要 git 传输。token 只从环境变量读。
+- 📝 README 顶上补了「一行装」和网络提醒；常见问题里补上「装的时候卡住怎么办」。
+- 🔧 package.json 补上 repository / homepage / bugs / author。
 # 更新记录
 
 版本规矩：改一次 +0.0.1。
