@@ -1,6 +1,6 @@
 {
   "name": "dsh-voice-edge",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "给 DSH 里的 AI 伙伴一副嗓子：想说什么，就合成成语音直接发到 QQ（Node，无 Python）。",
   "license": "MIT",
   "type": "module",
@@ -12,6 +12,7 @@
   },
   "files": ["lib", "tools", "cordis.patch.yml", "README.md", "CHANGELOG.md", "LICENSE"],
   "dependencies": { "msedge-tts": "^2.1.1" },
+  "optionalDependencies": { "sherpa-onnx-node": "^2.0.0" },
   "dsh": {
     "bundle": { "patch": "./cordis.patch.yml" },
     "client": {

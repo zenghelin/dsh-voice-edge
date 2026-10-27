@@ -11,6 +11,9 @@ importers:
       msedge-tts:
         specifier: ^2.1.1
         version: 2.1.1(debug@4.4.3)
+      sherpa-onnx-node:
+        specifier: ^2.0.0
+        version: 2.0.0
 
 packages:
 
@@ -155,6 +158,44 @@ packages:
 
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
+
+  sherpa-onnx-darwin-arm64@2.0.0:
+    resolution: {integrity: sha512-4+r/37ZBRaqyJGUf1W4HVcC6roRTFU27b/rZEMBSr6MQRJWX2D3s04fosOhbAi3zYFvEVbuY9xEWmvMUPquPAg==}
+    cpu: [arm64]
+    os: [darwin]
+
+  sherpa-onnx-darwin-x64@2.0.0:
+    resolution: {integrity: sha512-Vya3QygqyGRds0VSJGobKBqf4gd8kO2QWGMIdt/tqJxSCjeEMWzpXWk999lmKOpRUow3h+DCU9lTH1tq8P3oRw==}
+    cpu: [x64]
+    os: [darwin]
+
+  sherpa-onnx-linux-arm64@2.0.0:
+    resolution: {integrity: sha512-Uv1nJufU6fFQ/81La4Jlh5qRt70L5pr+oQaliQ8DlOWHqWmH45EcOXhSsq5061iMt1TjGyRsqbvlhWtHUHKw9g==}
+    cpu: [arm64]
+    os: [linux]
+
+  sherpa-onnx-linux-x64@2.0.0:
+    resolution: {integrity: sha512-Pp2McNdxRIIref6+nXKgkh3yPk02zl5/9xsCIzJopypmdtCGoMBII2MMsnf9ibwnFTVTlz+lhCn6YlwV2p5RRA==}
+    cpu: [x64]
+    os: [linux]
+
+  sherpa-onnx-node@2.0.0:
+    resolution: {integrity: sha512-c/FGNV77jNWENxReoMrL3LCPGQFP4nV/B1uWqqx5pC2gUEkfu3Wxa9B9NLjt9qrC0xe/57JgamkZyvAeI2Wifw==}
+
+  sherpa-onnx-win-arm64@2.0.0:
+    resolution: {integrity: sha512-0KTVDA1aq13jqcIfxOmLcNpzZcIOiwbH9MoKc6Bx1XEFTNj38nVdDcOA6WFoy3wqUNgMfwwv6EYPGhl1SW0Iuw==}
+    cpu: [arm64]
+    os: [win32]
+
+  sherpa-onnx-win-ia32@2.0.0:
+    resolution: {integrity: sha512-O+RXB9rOHJYdpatVgG8UJnV5UrGZShVmYISivMPVunnzgVZ/2bSj95sUWlBp6WRf7iYoA2EkrP0nljl6j016gQ==}
+    cpu: [ia32]
+    os: [win32]
+
+  sherpa-onnx-win-x64@2.0.0:
+    resolution: {integrity: sha512-AAVPXTcuIoYKmkim2yclCtgIzqqMd2yGjs1XSB2nG2pmnC/T+tKV5nqXMZlwbdZgsN+dWVQaorSpQ69U5s5xKw==}
+    cpu: [x64]
+    os: [win32]
 
   stream-browserify@3.0.0:
     resolution: {integrity: sha512-H73RAHsVBapbim0tU2JwwOiXUj+fikfiaoYAKHF3VJfA0pe2BCzkhAHBlLG6REzE+2WNZcxOXjK7lkso+9euLA==}
@@ -331,6 +372,37 @@ snapshots:
       util-deprecate: 1.0.2
 
   safe-buffer@5.2.1: {}
+
+  sherpa-onnx-darwin-arm64@2.0.0:
+    optional: true
+
+  sherpa-onnx-darwin-x64@2.0.0:
+    optional: true
+
+  sherpa-onnx-linux-arm64@2.0.0:
+    optional: true
+
+  sherpa-onnx-linux-x64@2.0.0:
+    optional: true
+
+  sherpa-onnx-node@2.0.0:
+    optionalDependencies:
+      sherpa-onnx-darwin-arm64: 2.0.0
+      sherpa-onnx-darwin-x64: 2.0.0
+      sherpa-onnx-linux-arm64: 2.0.0
+      sherpa-onnx-linux-x64: 2.0.0
+      sherpa-onnx-win-arm64: 2.0.0
+      sherpa-onnx-win-ia32: 2.0.0
+      sherpa-onnx-win-x64: 2.0.0
+
+  sherpa-onnx-win-arm64@2.0.0:
+    optional: true
+
+  sherpa-onnx-win-ia32@2.0.0:
+    optional: true
+
+  sherpa-onnx-win-x64@2.0.0:
+    optional: true
 
   stream-browserify@3.0.0:
     dependencies:

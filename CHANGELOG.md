@@ -1,3 +1,16 @@
+## 0.0.4 — 2026-10-27
+
+**离线嗓音换成「本地小模型」，断网也能念得像样**
+
+- 🆕 离线这条路升级：先试**本地小模型**（sherpa-onnx + Piper 中文 `zh_CN-huayan-x_low`，**16kHz**，约 20MB），
+  再退到 Windows 自带的语音（8kHz 的那副太闷，只当最后一道保险）。
+- 🆕 设置页多了 **「下载离线模型」**：一键从镜像站下模型（约 20MB），带进度；
+  「备用嗓音」变成三选一：离线小模型 / Windows 自带 / 关掉。
+- 🆕 新路由：`POST /dsh-voice-edge/下载离线模型`、状态里的 `离线模型` / `下载`。
+- ⚠️ **离线合成放在子进程里跑**：sherpa-onnx 是原生模块，配置不对（比如模型缺 lexicon）会直接段错误
+  把整个进程带走 —— 实测崩过一次。现在它单独一个子进程，崩了只是这一条失败，DSH 不受影响。
+- 🔧 sherpa-onnx-node 声明成 **optionalDependencies**：装不上也不影响在线那条路。
+- 📝 模型来源：HuggingFace `csukuangfj/vits-piper-zh_CN-huayan-x_low`（含 `tokens.txt` + `lexicon.txt`）。
 ## 0.0.3 — 2026-10-27
 
 **断网也能出声了：加了离线备胎**
