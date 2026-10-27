@@ -1,6 +1,6 @@
 {
   "name": "dsh-voice-edge",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "给 DSH 里的 AI 伙伴一副嗓子：想说什么，就合成成语音直接发到 QQ（Node，无 Python）。",
   "license": "MIT",
   "type": "module",
