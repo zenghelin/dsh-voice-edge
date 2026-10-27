@@ -1,0 +1,5 @@
+# DSH「给小鱼一副嗓子」—— 把想说的话合成语音，直接发到 QQ
+# 这一行激活「宿主半边」；id 也是路由前缀 / 配置命名空间。
+- insert:
+    - id: voice-edge
+      name: 'dsh-voice-edge'
